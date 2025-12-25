@@ -1,0 +1,116 @@
+.details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    direction: rtl;
+    font-family: sans-serif;
+  }
+  
+  .ticket-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    background: #f0f2f5;
+    border-radius: 12px;
+    min-height: 200px;
+  }
+  
+  /* הגדרות בסיסיות לבועה */
+  .comment-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  
+  .comment-bubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  /* תגובה שלי - צד שמאל (בגלל ה-RTL) */
+  .my-msg {
+    justify-content: flex-end;
+  }
+  .my-msg .comment-bubble {
+    background-color: #dcf8c6;
+    border-bottom-left-radius: 2px;
+  }
+  
+  /* תגובות של אחרים - צד ימין */
+  .others-msg {
+    justify-content: flex-start;
+  }
+  .others-msg .comment-bubble {
+    background-color: white;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .comment-author {
+    font-weight: bold;
+    font-size: 0.85em;
+    margin-bottom: 4px;
+    color: #555;
+  }
+  
+  .comment-date {
+    font-size: 0.7em;
+    color: #999;
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  .comment-form textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 15px;
+    resize: none;
+  }
+  
+  .btn-submit {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .btn-back {
+    background: #ffffff;      /* רקע לבן נקי */
+    color: #1a237e;           /* כחול כהה שתואם לכותרות */
+    border: 1px solid #e0e0e0; /* מסגרת עדינה */
+    padding: 8px 16px;
+    border-radius: 8px;        /* פינות מעוגלות כמו הכרטיסים */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 8px;                 /* רווח בין החץ לטקסט */
+    margin-bottom: 15px;      /* רווח מהכרטיס שמתחתיו */
+    transition: all 0.2s ease; /* אנימציה חלקה במעבר עכבר */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .btn-back:hover {
+    background: #f5f7fa;      /* שינוי גוון קל במעבר עכבר */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-1px); /* הרמה קלה של הכפתור */
+  }
+  
+  .btn-back:active {
+    transform: translateY(0);  /* אפקט לחיצה */
+  }
